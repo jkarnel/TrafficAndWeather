@@ -1,6 +1,6 @@
 using System;
 
-namespace TrafikAndWeather.Models
+namespace TraficAndWeather.Models
 {
     public class ErrorViewModel
     {

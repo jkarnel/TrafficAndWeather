@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "TrafikAndWeather": {
+    "TraficAndWeather": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
