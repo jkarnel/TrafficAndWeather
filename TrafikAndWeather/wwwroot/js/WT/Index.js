@@ -14,10 +14,10 @@
                     }
                     else {
                         $towns.append(`<option value='${data[i].value}'>${data[i].text}</option>`);
-                    }                    
+                    }
                 }
                 $towns.change();
-            },           
+            },
         });
     });
 
@@ -29,7 +29,7 @@
                 regionCode: countryId
             },
             success: (html) => {
-                $("#weather").html(html);
+                $("#weather").replaceWith(html);
             },
         });
         $.ajax({
@@ -38,7 +38,7 @@
                 regionCode: countryId
             },
             success: (html) => {
-                $("#traffic").html(html);
+                $("#traffic").replaceWith(html);
             },
         });
     });

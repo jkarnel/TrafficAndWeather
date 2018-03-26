@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -33,7 +34,7 @@ namespace TrafficAndWeather.Controllers
         public PartialViewResult GetWeatherViewPartial(int? regionCode)
         {
             var weatherData = regionCode.HasValue ? _service.GetWeatherData(regionCode.Value) : null;
-            WeatherViewModel viewData = new WeatherViewModel();
+            WeatherViewModel viewData = null;
             if (weatherData != null)
             {
                 viewData = _mapper.Map<WeatherViewModel>(weatherData);
@@ -45,7 +46,7 @@ namespace TrafficAndWeather.Controllers
         public PartialViewResult GetTrafficViewPartial(int? regionCode)
         {
             var trafficData = regionCode.HasValue ? _service.GetTrafficData(regionCode.Value) : null;
-            TrafficViewModel viewData = new TrafficViewModel();
+            TrafficViewModel viewData = null;
             if (trafficData != null)
             {
                 viewData = _mapper.Map<TrafficViewModel>(trafficData);

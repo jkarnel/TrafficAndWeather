@@ -4,26 +4,18 @@
 }
 
 <div class="header">
-    <div class="logo">
-        <img src="~/images/uklon-logo.png" />
-    </div>
-    <div class="selectors">
-        <div class="dropdown">
-            @Html.DropDownList("Countries", Model.Countries, new { @id = "countries" })
-        </div>
+    <img class="logo" src="~/images/uklon-logo.png" />
+    <div class="condition">
+        @Html.DropDownList("Countries", Model.Countries, new { @id = "countries", @class = "condition__filter form-control" })
         <div class="clear"></div>
-        <div class="dropdown">
-            @Html.DropDownList("Towns", Model.Towns, new { @id = "towns" })
-        </div>
+        @Html.DropDownList("Towns", Model.Towns, new { @id = "towns", @class = "condition__filter form-control" })
     </div>
 </div>
+<div class="clear"></div>
 <div class="content">
-    <div id="traffic">
-        @Html.Partial("_Traffic", Model.TrafficDetails)
-    </div>
-    <div id="weather">
-        @Html.Partial("_Weather", Model.WeatherDetails)
-    </div>
+    @Html.Partial("_Traffic", Model.TrafficDetails)
+    <div class="clear"></div>
+    @Html.Partial("_Weather", Model.WeatherDetails)
 </div>
 
 @section Scripts{

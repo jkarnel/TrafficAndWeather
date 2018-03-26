@@ -1,15 +1,13 @@
 ﻿@model TrafficViewModel;
 
-@{ 
-    string Stage = Model.Stage.ToString();
-    string RegionName = Model.RegionName ?? "-";
-    string Date = Model.DateTime != default(DateTime) ? Model.DateTime.ToShortDateString() : "-";
-    string Description = Model.Description ?? "-";
-}
-
-<div class="trafic-content">
-    <div class="trafic-stage">@Stage</div>
-    <div class="trafic-region">@RegionName</div>
-    <div class="trafic-date">@Date</div>
-    <div class="trafic-description">@Description</div>
+<div id="traffic" class="traffic rectangle">
+    @if (Model != null)
+    {
+        <div class="data">
+            <div class="traffic__stage @Model.Colour"><span>@Model.Stage</span></div>
+            <div class="traffic__region"><span>@Model.RegionName</span></div>
+            <div class="traffic__date"><span>@Model.DateTime</span></div>
+            <div class="traffic__description"><span>@Model.Description</span></div>
+        </div>
+    }
 </div>

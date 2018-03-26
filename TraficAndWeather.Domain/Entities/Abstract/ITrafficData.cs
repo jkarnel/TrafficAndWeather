@@ -8,6 +8,7 @@ namespace TrafficAndWeather.Domain.Entities.Abstract
     {
         int Stage { get; set; }
         string Description { get; set; }
+        string Colour { get; set; }
         DateTime DateTime { get; set; }
         string RegionName { get; set; }
     }

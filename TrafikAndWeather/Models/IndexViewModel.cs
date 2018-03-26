@@ -9,13 +9,6 @@ namespace TrafficAndWeather.Models
 {
     public class IndexViewModel
     {
-        public IndexViewModel()
-        {
-            TrafficDetails = new TrafficViewModel();
-            WeatherDetails = new WeatherViewModel();
-            Countries = new List<SelectListItem>();
-            Towns = new List<SelectListItem>();
-        }
         public TrafficViewModel TrafficDetails { get; set; }
         public WeatherViewModel WeatherDetails { get; set; }
         public IEnumerable<SelectListItem> Countries { get; set; }

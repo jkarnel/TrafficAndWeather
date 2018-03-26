@@ -11,46 +11,103 @@
 .body-content {
     width: 1000px;
     height: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
+    position: center;
+}
+
+.header .logo {
+    max-height: 300px;
+    max-width: 400px;
+    width: 200px;
+    height: 200px;
+    margin-left: -30px;
+}
+
+.condition {
+    float: right;
+}
+
+    .condition .condition__filter {
+        float: right;
+    }
+
+.clear {
+    clear: both;
+    height: 15px;
+}
+
+.rectangle {
+    background-color: white;
+    opacity: 0.8;
+    padding: 32px;
 }
 
 .header {
-    position:relative;
-    height:210px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding: 32px;
 }
 
-    .header .logo {
-        width:60%;
-        float: left;
-        margin-left: 32px;
-        vertical-align: middle;
-    }
-
-    .header .selectors {
-        position:relative;
-        padding-top:15px;
-        width: 30%;
-        float: right;
-        margin-right: 32px;
-    }
-
-        .header .selectors .dropdown {
-            position:static;
-            vertical-align:top;
-            float:right;
-        }
-
-.content{
-    height:400px;
+.data {
+    width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    height: 48px;
 }
 
-.clear{
-    clear:both;
-    height:15px;
+.traffic__stage {
+    display: flex;
+    align-items: center;
+    background-color: green;
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-right: 15px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.green{
+    background-color:green;
+}
+
+.traffic__stage span {
+    width: 100%;
+    text-align: center;
+    font-size: 14pt;
+    color: black;
+}
+
+.traffic__region {
+    display: flex;
+    align-items: center;
+    position: relative;
+    float: left;
+    height: 48px;
+    margin-right: 15px;
+}
+
+.traffic__region span {
+    font-size: 22pt;
+    font-weight:400;
+    color:black;
+}
+
+.traffic__date {
+    display: flex;
+    align-items: center;
+    position: relative;
+    float: left;
+    height: 48px;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.traffic__description {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 48px;
+    margin-top: 5px;
+    float: right;
 }
 
 /* Carousel */

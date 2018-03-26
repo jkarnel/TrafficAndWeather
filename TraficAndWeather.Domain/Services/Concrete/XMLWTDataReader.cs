@@ -23,8 +23,8 @@ namespace TrafficAndWeather.Domain.Services.Concrete
 
             string regionName = regionNode.Element("title").Value;
 
-            var traficNode = root.Element("traffic");
-            var traficData = GetTrafficData(traficNode);
+            var trafficNode = root.Element("traffic");
+            var trafficData = GetTrafficData(trafficNode);
 
             var weatherNode = root.Element("weather");
             var weatherData = GetWeatherData(weatherNode);
@@ -33,26 +33,26 @@ namespace TrafficAndWeather.Domain.Services.Concrete
             {
                 RegionCode = regionId,
                 RegionName = regionName,
-                TrafficData = traficData,
+                TrafficData = trafficData,
                 WeatherData = weatherData
             };
         }
 
-        private ITrafficData GetTrafficData(XElement traficNode)
+        private ITrafficData GetTrafficData(XElement trafficNode)
         {
-            if (traficNode != null && traficNode.HasElements)
+            if (trafficNode != null && trafficNode.HasElements)
             {
-                var traficRegionName = traficNode.Element("title").Value;
-                var regionNode = traficNode.Element("region");
+                var trafficRegionName = trafficNode.Element("title").Value;
+                var regionNode = trafficNode.Element("region");
 
-                var traficStageStr = regionNode.Element("level").Value;
-                int.TryParse(traficStageStr, out int traficStage);
+                var trafficStageStr = regionNode.Element("level").Value;
+                int.TryParse(trafficStageStr, out int trafficStage);
 
-                var traficIconColorName = regionNode.Element("icon").Value;
+                var trafficIconColorName = regionNode.Element("icon").Value;
                 var timestampStr = regionNode.Element("timestamp").Value;
                 int.TryParse(timestampStr, out int timestamp);
 
-                var traficDescription = regionNode.Elements("hint")
+                var trafficDescription = regionNode.Elements("hint")
                     .Where(x => x.Attribute("lang").Value == "ru")
                     .FirstOrDefault()
                     .Value;
@@ -60,9 +60,10 @@ namespace TrafficAndWeather.Domain.Services.Concrete
                 return new TrafficData
                 {
                     DateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc).AddSeconds(timestamp),
-                    Stage = traficStage,
-                    Description = traficDescription,
-                    RegionName = traficRegionName
+                    Stage = trafficStage,
+                    Colour = trafficIconColorName,
+                    Description = trafficDescription,
+                    RegionName = trafficRegionName
                 };
             }
             return null;

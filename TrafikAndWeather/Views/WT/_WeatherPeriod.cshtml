@@ -1,9 +1,7 @@
 ﻿@model DayPeriodViewModel;
 
-<div class="day-period">
-    <div class="period-name">@Model.PeriodName</div>
-    <div class="image">
-        <img src="@Model.ImageUrl"/>
-    </div>
-    <div class="temperature">@Model.TemperatureFrom/@Model.TemperatureTo</div>
+<div class="day-part">
+    <div class="day-part__name">@Model.PeriodName</div>
+    <img class="weather__image_size_s" src="@Model.ImageUrl" />
+    <div class="weather__temperature_size_s">@Model.TemperatureFrom/@Model.TemperatureTo</div>
 </div>
