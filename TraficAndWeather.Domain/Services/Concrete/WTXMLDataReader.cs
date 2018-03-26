@@ -1,47 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
-using TrafficAndWeather.Domain.Data;
+using System.IO;
+using System.Linq;
+using System.Xml.Linq;
 using TrafficAndWeather.Domain.Entities.Abstract;
 using TrafficAndWeather.Domain.Entities.Concrete;
-using TrafficAndWeather.Domain.Providers.Abstract;
-using System.Xml.Linq;
-using System.Linq;
+using TrafficAndWeather.Domain.Services.Abstract;
 
-namespace TrafficAndWeather.Domain.Providers.Concrete
+namespace TrafficAndWeather.Domain.Services.Concrete
 {
-    internal sealed class XMLWTDataProvider : IWTDataProvider
+    internal sealed class WTXMLDataReader : IWTDataReader
     {
-        public IWTData GetData(int regionCode, int cacheTime = 0)
+        public IWTData ReadData(Stream stream)
         {
-            if (AppData.WTData.TryGetValue(regionCode, out string xmlPath))
+            XDocument doc = XDocument.Load(stream);
+            var root = doc.Root;
+
+            //root data
+            var regionNode = root.Element("region");
+
+            var regionIdStr = regionNode.Attribute("id").Value;
+            int.TryParse(regionIdStr, out int regionId);
+
+            string regionName = regionNode.Element("title").Value;
+
+            //traffic data
+            var traficNode = root.Element("traffic");
+            var traficData = GetTrafficData(traficNode);
+
+            var weatherNode = root.Element("weather");
+            var weatherData = GetWeatherData(weatherNode);
+
+            return new WTData
             {
-                XDocument doc = XDocument.Load(xmlPath);
-                var root = doc.Root;
-
-                //root data
-                var regionNode = root.Element("region");
-
-                var regionIdStr = regionNode.Attribute("id").Value;
-                int.TryParse(regionIdStr, out int regionId);
-
-                string regionName = regionNode.Element("title").Value;
-
-                //traffic data
-                var traficNode = root.Element("traffic");
-                var traficData = GetTrafficData(traficNode);
-
-                var weatherNode = root.Element("weather");
-                var weatherData = GetWeatherData(weatherNode);
-
-                return new WTData
-                {
-                    RegionCode = regionId,
-                    RegionName = regionName,
-                    TrafficData = traficData,
-                    WeatherData = weatherData
-                };
-            }
-            return null;
+                RegionCode = regionId,
+                RegionName = regionName,
+                TrafficData = traficData,
+                WeatherData = weatherData
+            };
         }
 
         private ITrafficData GetTrafficData(XElement traficNode)
