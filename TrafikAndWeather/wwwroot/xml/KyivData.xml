@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<info lang="ru">
+  <region id="143" zoom="12" lat="50.450418" lon="30.523541">
+    <title>Киев</title>
+  </region>
+  <traffic region="143" zoom="12" lat="50.450418" lon="30.523541">
+    <region id="143">
+      <length>72285.2577537</length>
+      <level>1</level>
+      <icon>green</icon>
+      <timestamp>1521992980</timestamp>
+      <time>18:49</time>
+      <hint lang="ru">На дорогах свободно</hint>
+      <hint lang="en">Clear roads</hint>
+      <hint lang="be">На дарогах свабодна</hint>
+      <hint lang="kk">Жолдар бос</hint>
+      <hint lang="tr">Trafik açık</hint>
+      <hint lang="uk">На дорогах вільно</hint>
+      <tend>0</tend>
+      <url>https://yandex.ua/maps/143/kyiv/probki</url>
+    </region>
+    <title>Киев</title>
+  </traffic>
+  <weather climate="1" region="143">
+    <source>mb3d</source>
+    <day>
+      <title>Киев</title>
+      <country>Украина</country>
+      <time_zone>Europe/Kiev</time_zone>
+      <summer-time>1</summer-time>
+      <sun_rise>06:50</sun_rise>
+      <sunset>19:18</sunset>
+      <daytime>d</daytime>
+      <date date="2018-03-25T00:00:00Z">
+        <day weekday="вс">25</day>
+        <month name="марта">3</month>
+        <year>2018</year>
+        <daytime>d</daytime>
+      </date>
+      <day_part typeid="2" type="день">
+        <weather_type>ясно</weather_type>
+        <weather_code>clear</weather_code>
+        <image>https://yastatic.net/weather/i/icons/blueye/24/skc_d.png</image>
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/skc_d_+2.png</image-v2>
+        <image-v3 size="48">https://yastatic.net/weather/i/icons/blueye/48/skc_d.png</image-v3>
+        <image_number></image_number>
+        <wind_speed>5</wind_speed>
+        <wind_direction id="sw">юго-запад</wind_direction>
+        <dampness>42</dampness>
+        <hectopascal>1002</hectopascal>
+        <torr>751</torr>
+        <pressure>751</pressure>
+        <temperature class_name="t4" color="F1F0E9">+3</temperature>
+        <time_zone>Europe/Kiev</time_zone>
+        <observation_time>15:36</observation_time>
+        <observation>2018-03-25T15:36:56</observation>
+      </day_part>
+      <day_part typeid="3" type="вечер">
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/skc_n_+4.png</image-v2>
+        <image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/skc_n.png</image-v3>
+        <temperature_from class_name="t-2" color="EAEDEF">-1</temperature_from>
+        <temperature_to class_name="t6" color="F2F0E6">+5</temperature_to>
+      </day_part>
+      <day_part typeid="4" type="ночь">
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/skc_n_0.png</image-v2>
+        <image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/skc_n.png</image-v3>
+        <temperature_from class_name="t-4" color="E5EAEE">-4</temperature_from>
+        <temperature_to class_name="t-2" color="EAEDEF">-1</temperature_to>
+      </day_part>
+      <day_part typeid="1" type="утро">
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/skc_d_+2.png</image-v2>
+        <image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/skc_d.png</image-v3>
+        <temperature_from class_name="t-4" color="E5EAEE">-4</temperature_from>
+        <temperature_to class_name="t4" color="F1F0E9">+3</temperature_to>
+      </day_part>
+      <day_part typeid="2" type="день">
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/skc_d_+6.png</image-v2>
+        <image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/skc_d.png</image-v3>
+        <temperature_from class_name="t4" color="F1F0E9">+3</temperature_from>
+        <temperature_to class_name="t6" color="F2F0E6">+6</temperature_to>
+      </day_part>
+      <night_short>
+        <temperature class_name="t-8" color="DAE5ED">-8</temperature>
+      </night_short>,
+      <tomorrow>
+        <temperature class_name="t6" color="F2F0E6">+6</temperature>
+      </tomorrow>
+    </day>
+    <url slug="kyiv">http://pogoda.yandex.ru/kyiv/</url>
+  </weather>
+</info>

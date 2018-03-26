@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TraficAndWeather.Domain.Entities.Abstract
+namespace TrafficAndWeather.Domain.Entities.Abstract
 {
     public interface IWTData
     {
@@ -10,6 +10,6 @@ namespace TraficAndWeather.Domain.Entities.Abstract
         string RegionName { get; set; }
         DateTime DateTime { get; set; }
         IWeatherData WeatherData { get; set; }
-        ITraficData TraficData { get; set; }
+        ITrafficData TrafficData { get; set; }
     }
 }

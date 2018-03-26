@@ -1,15 +1,56 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿body, html {
+    height: 100%;
     background-image: url(../images/background-image.png);
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
+    width: 1000px;
+    height: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    position: relative;
+}
+
+.header {
+    position:relative;
+    height:210px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+    .header .logo {
+        width:60%;
+        float: left;
+        margin-left: 32px;
+        vertical-align: middle;
+    }
+
+    .header .selectors {
+        position:relative;
+        padding-top:15px;
+        width: 30%;
+        float: right;
+        margin-right: 32px;
+    }
+
+        .header .selectors .dropdown {
+            position:static;
+            vertical-align:top;
+            float:right;
+        }
+
+.content{
+    height:400px;
+}
+
+.clear{
+    clear:both;
+    height:15px;
 }
 
 /* Carousel */
@@ -35,5 +76,3 @@
         display: none;
     }
 }
-
-

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TraficAndWeather", "TrafikAndWeather\TraficAndWeather.csproj", "{4919D4A4-A24D-4710-B1D6-754EA50B7987}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrafficAndWeather", "TrafikAndWeather\TrafficAndWeather.csproj", "{4919D4A4-A24D-4710-B1D6-754EA50B7987}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TraficAndWeather.Domain", "TraficAndWeather.Domain\TraficAndWeather.Domain.csproj", "{35990A77-2C41-48C1-BAD7-3CF41E548971}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrafficAndWeather.Domain", "TraficAndWeather.Domain\TrafficAndWeather.Domain.csproj", "{35990A77-2C41-48C1-BAD7-3CF41E548971}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraficAndWeather.Test", "TraficAndWeather.Test\TraficAndWeather.Test.csproj", "{12DE05F1-F41C-4BA6-9CDB-5BFC78ACCF6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficAndWeather.Test", "TraficAndWeather.Test\TrafficAndWeather.Test.csproj", "{12DE05F1-F41C-4BA6-9CDB-5BFC78ACCF6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

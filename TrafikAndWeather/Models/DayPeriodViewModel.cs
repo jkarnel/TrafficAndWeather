@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TraficAndWeather.Models
+namespace TrafficAndWeather.Models
 {
     public class DayPeriodViewModel
     {
-        public string Name { get; set; }
-        public byte[] Image { get; set; }
-        public int TemperatureFrom { get; set; }
-        public int TemperatureTo { get; set; }
+        public string PeriodName { get; set; }
+        public string ImageUrl { get; set; }
+        public string TemperatureFrom { get; set; }
+        public string TemperatureTo { get; set; }
     }
 }

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<info lang="ru">
+
+  <region id="144" zoom="13" lat="49.839678" lon="24.029709">
+    <title>Львов</title>
+  </region>
+
+
+  <traffic region="144" zoom="13" lat="49.839678" lon="24.029709">
+    <region id="144">
+      <length>968.854696149</length>
+      <level>0</level>
+      <icon>green</icon>
+      <timestamp>1522023494</timestamp>
+      <time>03:18</time>
+      <hint lang="ru">На дорогах свободно</hint>
+      <hint lang="en">Clear roads</hint>
+      <hint lang="be">На дарогах свабодна</hint>
+      <hint lang="kk">Жолдар бос</hint>
+      <hint lang="tr">Trafik açık</hint>
+      <hint lang="uk">На дорогах вільно</hint>
+      <tend>0</tend>
+      <url>https://yandex.ua/maps/144/lviv/probki</url>
+    </region>
+    <title>Львов</title>
+  </traffic>
+
+
+  <weather  region="144">
+    <source>mb3d</source>
+
+    <day>
+      <title>Львов</title>
+      <country>Украина</country>
+      <time_zone>Europe/Kiev</time_zone>
+      <summer-time>1</summer-time>
+      <sun_rise>07:14</sun_rise>
+      <sunset>19:45</sunset>
+      <daytime>n</daytime>
+      <date date="2018-03-26T00:00:00Z">
+        <day weekday="пн">26</day>
+        <month name="марта">3</month>
+        <year>2018</year>
+        <daytime>n</daytime>
+      </date>
+
+      <day_part typeid="4" type="ночь">
+        <weather_type>ясно</weather_type>
+        <weather_code>clear</weather_code>
+        <image>https://yastatic.net/weather/i/icons/blueye/24/skc_n.png</image>
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/skc_n_-2.png</image-v2>
+        <image-v3 size="48">https://yastatic.net/weather/i/icons/blueye/48/skc_n.png</image-v3>
+        <image_number></image_number>
+        <wind_speed>2</wind_speed>
+        <wind_direction id="se">юго-восток</wind_direction>
+        <dampness>71</dampness>
+        <hectopascal>979</hectopascal>
+        <torr>734</torr>
+        <pressure>734</pressure>
+        <temperature class_name="t-2" color="EAEDEF">-2</temperature>
+        <time_zone>Europe/Kiev</time_zone>
+        <observation_time>00:06</observation_time>
+        <observation>2018-03-26T00:06:37</observation>
+      </day_part>
+
+
+      <day_part typeid="1" type="утро">
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/skc_d_+4.png</image-v2>
+        <image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/skc_d.png</image-v3>
+
+        <temperature_from class_name="t-4" color="E5EAEE">-3</temperature_from>
+        <temperature_to class_name="t4" color="F1F0E9">+4</temperature_to>
+
+      </day_part>
+
+
+      <day_part typeid="2" type="день">
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/skc_d_+8.png</image-v2>
+        <image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/skc_d.png</image-v3>
+
+        <temperature_from class_name="t6" color="F2F0E6">+5</temperature_from>
+        <temperature_to class_name="t8" color="F3F1E3">+8</temperature_to>
+
+      </day_part>
+
+
+      <day_part typeid="3" type="вечер">
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/bkn_n_+8.png</image-v2>
+        <image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/bkn_n.png</image-v3>
+
+        <temperature_from class_name="t2" color="F0F0EC">+1</temperature_from>
+        <temperature_to class_name="t8" color="F3F1E3">+8</temperature_to>
+
+      </day_part>
+
+
+      <day_part typeid="4" type="ночь">
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/ovc_0.png</image-v2>
+        <image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/ovc.png</image-v3>
+
+        <temperature_from class_name="t-2" color="EAEDEF">-1</temperature_from>
+        <temperature_to class_name="t2" color="F0F0EC">+1</temperature_to>
+
+      </day_part>
+
+      <today>
+        <temperature class_name="t8" color="F3F1E3">+8</temperature>
+      </today>
+    </day>
+
+    <url slug="lvov">http://pogoda.yandex.ru/lvov/</url>
+  </weather>
+
+</info>

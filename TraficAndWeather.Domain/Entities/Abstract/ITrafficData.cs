@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TraficAndWeather.Domain.Entities.Abstract
+namespace TrafficAndWeather.Domain.Entities.Abstract
 {
-    public interface ITraficData
+    public interface ITrafficData
     {
         int Stage { get; set; }
         string Description { get; set; }

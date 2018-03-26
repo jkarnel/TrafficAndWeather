@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using TraficAndWeather.Domain.Entities.Abstract;
+using TrafficAndWeather.Domain.Entities.Abstract;
 
-namespace TraficAndWeather.Domain.Entities.Concrete
+namespace TrafficAndWeather.Domain.Entities.Concrete
 {
     internal sealed class WTData : IWTData
     {
@@ -11,6 +11,6 @@ namespace TraficAndWeather.Domain.Entities.Concrete
         public string RegionName { get; set; }
         public DateTime DateTime { get; set; }
         public IWeatherData WeatherData { get; set; }
-        public ITraficData TraficData { get; set; }
+        public ITrafficData TrafficData { get; set; }
     }
 }

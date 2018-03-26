@@ -3,17 +3,22 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TraficAndWeather.Models;
+using TrafficAndWeather.Models;
 
-namespace TraficAndWeather.Models
+namespace TrafficAndWeather.Models
 {
     public class IndexViewModel
     {
-        public int Country { get; set; }
-        public int Town { get; set; }
-        public TrafiсViewModel TraficDetails { get; set; }
+        public IndexViewModel()
+        {
+            TrafficDetails = new TrafficViewModel();
+            WeatherDetails = new WeatherViewModel();
+            Countries = new List<SelectListItem>();
+            Towns = new List<SelectListItem>();
+        }
+        public TrafficViewModel TrafficDetails { get; set; }
         public WeatherViewModel WeatherDetails { get; set; }
-        public List<SelectListItem> Countries { get; set; }
-        public List<SelectListItem> Towns { get; set; }
+        public IEnumerable<SelectListItem> Countries { get; set; }
+        public IEnumerable<SelectListItem> Towns { get; set; }
     }
 }

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<info lang="ru">
+
+  <region id="213" zoom="10" lat="55.75396" lon="37.620393">
+    <title>Москва</title>
+  </region>
+
+
+  <traffic region="213" zoom="10" lat="55.75396" lon="37.620393">
+    <region id="213">
+      <length>102569.989849</length>
+      <level>0</level>
+      <icon>green</icon>
+      <timestamp>1522023494</timestamp>
+      <time>03:18</time>
+      <hint lang="ru">На дорогах свободно</hint>
+      <hint lang="en">Clear roads</hint>
+      <hint lang="be">На дарогах свабодна</hint>
+      <hint lang="kk">Жолдар бос</hint>
+      <hint lang="tr">Trafik açık</hint>
+      <hint lang="uk">На дорогах вільно</hint>
+      <tend>0</tend>
+      <url>https://yandex.ru/maps/213/moscow/probki</url>
+    </region>
+    <title>Москва</title>
+  </traffic>
+
+
+  <weather climate="1" region="213">
+    <source>mb3d</source>
+
+    <day>
+      <title>Москва</title>
+      <country>Россия</country>
+      <time_zone>Europe/Moscow</time_zone>
+      <summer-time>1</summer-time>
+      <sun_rise>06:16</sun_rise>
+      <sunset>18:54</sunset>
+      <daytime>n</daytime>
+      <date date="2018-03-26T00:00:00Z">
+        <day weekday="пн">26</day>
+        <month name="марта">3</month>
+        <year>2018</year>
+        <daytime>n</daytime>
+      </date>
+
+      <day_part typeid="4" type="ночь">
+        <weather_type>облачно</weather_type>
+        <weather_code>overcast</weather_code>
+        <image>https://yastatic.net/weather/i/icons/blueye/24/ovc.png</image>
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/ovc.png</image-v2>
+        <image-v3 size="48">https://yastatic.net/weather/i/icons/blueye/48/ovc.png</image-v3>
+        <image_number>5</image_number>
+        <wind_speed>5.7</wind_speed>
+        <wind_direction id="sw">юго-запад</wind_direction>
+        <dampness>73</dampness>
+        <hectopascal>988</hectopascal>
+        <torr>741</torr>
+        <pressure>741</pressure>
+        <temperature class_name="t0" color="F0EFF0">0</temperature>
+        <time_zone>Europe/Moscow</time_zone>
+        <observation_time>00:00</observation_time>
+        <observation>2018-03-26T00:00:00</observation>
+      </day_part>
+
+
+      <day_part typeid="1" type="утро">
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/ovc_+2.png</image-v2>
+        <image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/ovc.png</image-v3>
+
+        <temperature_from class_name="t0" color="F0EFF0">0</temperature_from>
+        <temperature_to class_name="t2" color="F0F0EC">+2</temperature_to>
+
+      </day_part>
+
+
+      <day_part typeid="2" type="день">
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/ovc_+2.png</image-v2>
+        <image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/ovc.png</image-v3>
+
+        <temperature_from class_name="t2" color="F0F0EC">+2</temperature_from>
+        <temperature_to class_name="t4" color="F1F0E9">+3</temperature_to>
+
+      </day_part>
+
+
+      <day_part typeid="3" type="вечер">
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/ovc_-sn_+2.png</image-v2>
+        <image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/ovc_-sn.png</image-v3>
+
+        <temperature_from class_name="t2" color="F0F0EC">+1</temperature_from>
+        <temperature_to class_name="t2" color="F0F0EC">+2</temperature_to>
+
+      </day_part>
+
+
+      <day_part typeid="4" type="ночь">
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/ovc_-sn_0.png</image-v2>
+        <image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/ovc_-sn.png</image-v3>
+
+        <temperature_from class_name="t0" color="F0EFF0">0</temperature_from>
+        <temperature_to class_name="t2" color="F0F0EC">+1</temperature_to>
+
+      </day_part>
+
+      <today>
+        <temperature class_name="t4" color="F1F0E9">+3</temperature>
+      </today>
+    </day>
+
+    <url slug="moscow">http://pogoda.yandex.ru/moscow/</url>
+  </weather>
+
+</info>

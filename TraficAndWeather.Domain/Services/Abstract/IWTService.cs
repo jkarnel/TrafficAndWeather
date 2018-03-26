@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using TraficAndWeather.Domain.Entities.Abstract;
-using TraficAndWeather.Domain.Entities.Concrete;
+using TrafficAndWeather.Domain.Entities.Abstract;
+using TrafficAndWeather.Domain.Entities.Concrete;
 
-namespace TraficAndWeather.Domain.Services.Abstract
+namespace TrafficAndWeather.Domain.Services.Abstract
 {
     public interface IWTService
     {
         IWeatherData GetWeatherData(int regionCode);
-        ITraficData GetTraficData(int regionCode);
+        ITrafficData GetTrafficData(int regionCode);
         IWTData GetWTData(int regionCode);
         IEnumerable<Country> GetCountries();
         IEnumerable<Town> GetTowns();

@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-using TraficAndWeather.Domain.Data;
-using TraficAndWeather.Domain.Entities.Abstract;
-using TraficAndWeather.Domain.Entities.Concrete;
-using TraficAndWeather.Domain.Services.Abstract;
-using TraficAndWeather.Domain.Providers.Abstract;
+using TrafficAndWeather.Domain.Data;
+using TrafficAndWeather.Domain.Entities.Abstract;
+using TrafficAndWeather.Domain.Entities.Concrete;
+using TrafficAndWeather.Domain.Services.Abstract;
+using TrafficAndWeather.Domain.Providers.Abstract;
 
-namespace TraficAndWeather.Domain.Services.Concrete
+namespace TrafficAndWeather.Domain.Services.Concrete
 {
     internal sealed class WTService : IWTService
     {
@@ -21,32 +21,42 @@ namespace TraficAndWeather.Domain.Services.Concrete
 
         public IEnumerable<Country> GetCountries()
         {
-            return Countries.CountriesData;
+            return AppData.CountriesData;
         }
 
         public Country GetCountry(int townId)
         {
-            return Countries.CountriesData.Where(x => x.Towns.Select(y => y.RegionCode).Contains(townId)).FirstOrDefault();
+            return AppData.CountriesData.Where(x => x.Towns.Select(y => y.RegionCode).Contains(townId)).FirstOrDefault();
         }
 
         public IEnumerable<Town> GetTowns()
         {
-            return Countries.CountriesData.SelectMany(x => x.Towns);
+            return AppData.CountriesData.SelectMany(x => x.Towns);
         }
 
         public IEnumerable<Town> GetTowns(int coutryId)
         {
-            return Countries.CountriesData.Where(x => x.RegionCode == coutryId).SelectMany(x => x.Towns);
+            return AppData.CountriesData.Where(x => x.RegionCode == coutryId).SelectMany(x => x.Towns);
         }
 
-        public ITraficData GetTraficData(int regionCode)
+        public ITrafficData GetTrafficData(int regionCode)
         {
-            return _dataProvider.GetData(regionCode).TraficData;
+            var result = _dataProvider.GetData(regionCode);
+            if(result != null)
+            {
+                return result.TrafficData;
+            }
+            return null;
         }
 
         public IWeatherData GetWeatherData(int regionCode)
         {
-            return _dataProvider.GetData(regionCode).WeatherData;
+            var result = _dataProvider.GetData(regionCode);
+            if (result != null)
+            {
+                return result.WeatherData;
+            }
+            return null;
         }
 
         public IWTData GetWTData(int regionCode)

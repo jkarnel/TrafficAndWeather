@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<info lang="ru">
+
+  <region id="202" zoom="7" lat="40.714545" lon="-74.007139">
+    <title>Нью-Йорк</title>
+  </region>
+
+  <traffic/>
+
+  <weather  region="202">
+    <source>mb3d</source>
+
+    <day>
+      <title>Нью-Йорк</title>
+      <country>США</country>
+      <time_zone>America/New_York</time_zone>
+      <summer-time>1</summer-time>
+      <sun_rise>06:51</sun_rise>
+      <sunset>19:13</sunset>
+      <daytime>n</daytime>
+      <date date="2018-03-25T00:00:00Z">
+        <day weekday="вс">25</day>
+        <month name="марта">3</month>
+        <year>2018</year>
+        <daytime>n</daytime>
+      </date>
+
+      <day_part typeid="3" type="вечер">
+        <weather_type>переменная облачность</weather_type>
+        <weather_code>partly-cloudy</weather_code>
+        <image>https://yastatic.net/weather/i/icons/blueye/24/bkn_n.png</image>
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/bkn_n_+4.png</image-v2>
+        <image-v3 size="48">https://yastatic.net/weather/i/icons/blueye/48/bkn_n.png</image-v3>
+        <image_number></image_number>
+        <wind_speed>5.1</wind_speed>
+        <wind_direction id="ne">северо-восток</wind_direction>
+        <dampness>45</dampness>
+        <hectopascal>1031</hectopascal>
+        <torr>773</torr>
+        <pressure>773</pressure>
+        <temperature class_name="t4" color="F1F0E9">+4</temperature>
+        <time_zone>America/New_York</time_zone>
+        <observation_time>00:06</observation_time>
+        <observation>2018-03-26T00:06:37</observation>
+      </day_part>
+
+
+      <day_part typeid="4" type="ночь">
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/skc_n_0.png</image-v2>
+        <image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/skc_n.png</image-v3>
+
+        <temperature_from class_name="t-2" color="EAEDEF">-1</temperature_from>
+        <temperature_to class_name="t2" color="F0F0EC">+1</temperature_to>
+
+      </day_part>
+
+
+      <day_part typeid="1" type="утро">
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/skc_d_+4.png</image-v2>
+        <image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/skc_d.png</image-v3>
+
+        <temperature_from class_name="t-2" color="EAEDEF">-2</temperature_from>
+        <temperature_to class_name="t4" color="F1F0E9">+4</temperature_to>
+
+      </day_part>
+
+
+      <day_part typeid="2" type="день">
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/skc_d_+6.png</image-v2>
+        <image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/skc_d.png</image-v3>
+
+        <temperature_from class_name="t4" color="F1F0E9">+4</temperature_from>
+        <temperature_to class_name="t6" color="F2F0E6">+6</temperature_to>
+
+      </day_part>
+
+
+      <day_part typeid="3" type="вечер">
+        <image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/skc_n_+4.png</image-v2>
+        <image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/skc_n.png</image-v3>
+
+        <temperature_from class_name="t0" color="F0EFF0">0</temperature_from>
+        <temperature_to class_name="t6" color="F2F0E6">+5</temperature_to>
+
+      </day_part>
+
+
+      <night_short>
+        <temperature class_name="t0" color="F0EFF0">0</temperature>
+      </night_short>,
+      <tomorrow>
+        <temperature class_name="t6" color="F2F0E6">+6</temperature>
+      </tomorrow>
+
+    </day>
+
+    <url slug="new-york">http://pogoda.yandex.ru/new-york/</url>
+  </weather>
+
+</info>

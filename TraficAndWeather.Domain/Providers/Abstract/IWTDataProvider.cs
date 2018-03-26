@@ -1,6 +1,6 @@
-﻿using TraficAndWeather.Domain.Entities.Abstract;
+﻿using TrafficAndWeather.Domain.Entities.Abstract;
 
-namespace TraficAndWeather.Domain.Providers.Abstract
+namespace TrafficAndWeather.Domain.Providers.Abstract
 {
     public interface IWTDataProvider
     {

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TraficAndWeather.Models
+namespace TrafficAndWeather.Models
 {
-    public class TrafiсViewModel
+    public class TrafficViewModel
     {
         public int Stage { get; set; }
         public string RegionName { get; set; }

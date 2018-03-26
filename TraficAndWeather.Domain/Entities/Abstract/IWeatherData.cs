@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TraficAndWeather.Domain.Entities.Abstract
+namespace TrafficAndWeather.Domain.Entities.Abstract
 {
     public interface IWeatherData
     {
-        int Temperature { get; set; }
-        byte[] Image { get; set; }
-        string Decsription { get; set; }
+        string Temperature { get; set; }
+        string ImageUrl { get; set; }
+        string Description { get; set; }
         IEnumerable<IWeatherPeriodData> Periods { get; set; }
     }
 }

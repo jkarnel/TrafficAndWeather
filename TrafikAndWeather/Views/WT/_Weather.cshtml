@@ -1,0 +1,31 @@
+﻿@model WeatherViewModel;
+
+@{ 
+    string ImageUrl = Model.ImageUrl ?? "-";
+    string Temperature = Model.Temperature ?? "-";
+    string Description = Model.Description ?? "-";
+}
+
+<div class="weather-content">
+    <div class="weather-logo">
+        <div class="weather-logo-header">
+            <img src="@ImageUrl" />
+        </div>
+        <div class="weather-logo-footer"></div>
+    </div>
+    <div class="weather-data">
+        <div class="weather-data-short">
+            <div class="weather-data-short-temperature">@Temperature</div>
+            <div class="weather-data-short-description">@Description</div>
+        </div>
+        <div class="line"></div>
+        <div class="weather-data-details">
+            @foreach (var item in Model.Periods)
+            {
+                @Html.Partial("_WeatherPeriod", item);
+            }
+        </div>
+
+    </div>
+
+</div>

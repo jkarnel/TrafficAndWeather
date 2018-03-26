@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using TraficAndWeather.Domain.Entities.Abstract;
+using TrafficAndWeather.Domain.Entities.Abstract;
 
-namespace TraficAndWeather.Domain.Entities.Concrete
+namespace TrafficAndWeather.Domain.Entities.Concrete
 {
     public sealed class Country
     {

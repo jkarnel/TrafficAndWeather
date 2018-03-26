@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using TraficAndWeather.Domain.Extentions;
+using TrafficAndWeather.Domain.Extentions;
 
-namespace TraficAndWeather
+namespace TrafficAndWeather
 {
     public class Startup
     {
@@ -47,7 +47,7 @@ namespace TraficAndWeather
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=WT}/{action=Index}/{id?}");
             });
         }
     }
