@@ -12,7 +12,7 @@ namespace TrafficAndWeather.Domain.Extentions
         {
             services.AddSingleton<IWTDataProvider, XMLWTDataProvider>();
             services.AddSingleton<IWTService, WTService>();
-            services.AddSingleton<IWTDataReader, WTXMLDataReader>();
+            services.AddSingleton<IWTDataReader, XMLWTDataReader>();
         }
     }
 }

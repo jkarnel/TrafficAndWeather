@@ -9,14 +9,13 @@ using TrafficAndWeather.Domain.Services.Abstract;
 
 namespace TrafficAndWeather.Domain.Services.Concrete
 {
-    internal sealed class WTXMLDataReader : IWTDataReader
+    internal sealed class XMLWTDataReader : IWTDataReader
     {
         public IWTData ReadData(Stream stream)
         {
             XDocument doc = XDocument.Load(stream);
             var root = doc.Root;
 
-            //root data
             var regionNode = root.Element("region");
 
             var regionIdStr = regionNode.Attribute("id").Value;
@@ -24,7 +23,6 @@ namespace TrafficAndWeather.Domain.Services.Concrete
 
             string regionName = regionNode.Element("title").Value;
 
-            //traffic data
             var traficNode = root.Element("traffic");
             var traficData = GetTrafficData(traficNode);
 
