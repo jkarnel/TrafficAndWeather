@@ -7,7 +7,10 @@
             <div class="traffic__stage @Model.Colour"><span>@Model.Stage</span></div>
             <div class="traffic__region"><span>@Model.RegionName</span></div>
             <div class="traffic__date"><span>@Model.DateTime</span></div>
-            <div class="traffic__description"><span>@Model.Description</span></div>
+            <div class="traffic__description">
+                <label>Пробки:</label>
+                <span>@Model.Description</span>
+            </div>
         </div>
     }
 </div>

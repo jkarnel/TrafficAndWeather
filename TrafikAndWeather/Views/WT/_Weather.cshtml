@@ -3,17 +3,21 @@
 <div id="weather" class="weather rectangle">
     @if (Model != null)
     {
-        <img class="weather__image_size_m" src="@Model.ImageUrl" />
         <div class="data">
             <div class="short">
-                <div class="weather__temperature_size_m">@Model.Temperature</div>
-                <div class="weather__description">@Model.Description</div>
+                <img class="weather__image_size_m" src="@Model.ImageUrl" />
+                <div class="weather__temperature_size_m">@Model.Temperature&deg;</div>
+                <div class="weather__description">
+                    <label>Погода:</label>
+                    @Model.Description
+                </div>
             </div>
-            <div class="line"></div>
+            <hr class="line" />
             <div class="details">
                 @foreach (var item in Model.Periods)
                 {
                     @Html.Partial("_WeatherPeriod", item);
+                    <div class="clear"></div>
                 }
             </div>
         </div>

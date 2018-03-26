@@ -1,13 +1,15 @@
 ﻿@model IndexViewModel;
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Uklon";
 }
 
 <div class="header">
     <img class="logo" src="~/images/uklon-logo.png" />
     <div class="condition">
+        <label>Bаша страна</label>
         @Html.DropDownList("Countries", Model.Countries, new { @id = "countries", @class = "condition__filter form-control" })
         <div class="clear"></div>
+        <label>Bаш город</label>
         @Html.DropDownList("Towns", Model.Towns, new { @id = "towns", @class = "condition__filter form-control" })
     </div>
 </div>

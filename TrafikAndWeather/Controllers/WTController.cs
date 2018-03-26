@@ -89,7 +89,7 @@ namespace TrafficAndWeather.Controllers
             {
                 countries = new List<SelectListItem>();
             }
-            countries.Insert(0, new SelectListItem { Value = "0", Selected = true, Text = "Выберите страну" });
+            countries.Insert(0, new SelectListItem { Value = "0", Selected = true, Text = "Страна не выбрана" });
             return countries;
         }
 
@@ -100,7 +100,7 @@ namespace TrafficAndWeather.Controllers
             {
                 towns = _mapper.Map<List<SelectListItem>>(_service.GetTowns(countryId)) ?? new List<SelectListItem>();
             }
-            towns.Insert(0, new SelectListItem { Value = "0", Selected = true, Text = "Выберите город" });
+            towns.Insert(0, new SelectListItem { Value = "0", Selected = true, Text = "Город не выбран" });
             return towns;
         }
     }
